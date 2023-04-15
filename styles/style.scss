@@ -1,0 +1,148 @@
+// Reset
+@import "./reset";
+
+// Fonts
+@import "./fonts";
+
+//          header
+
+.header {
+  &__top-header {
+    width: 100%;
+    height: 40px;
+  }
+
+  &__bottom-header {
+  }
+}
+.top-header {
+  &__wrapper {
+  }
+
+  &__location {
+    margin-right: 40px;
+  }
+
+  &__link {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #191919;
+
+    margin-right: 40px;
+  }
+
+  &__text {
+  }
+
+  &__text--bold {
+  }
+
+  &__login-menu {
+  }
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1290px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.location {
+  position: relative;
+  &:hover &__menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  &:hover &__icon {
+    transform: rotate(180deg);
+  }
+
+  &__menu {
+    position: absolute;
+    left: 28px;
+    top: 100%;
+    width: 100%;
+
+    transition: 0.13s;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+  }
+  &-menu__btn {
+    width: 100%;
+    padding: 8px 2px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+    text-align: left;
+    &:hover {
+      background: rgba($color: #000000, $alpha: 0.05);
+    }
+  }
+  &__icon {
+    display: inline-block;
+
+    background-image: url(/assets/sprites/Left_Arrow.svg);
+    background-repeat: no-repeat;
+    background-position: top 4px center;
+    width: 12px;
+    height: 12px;
+
+    transition: 0.3s;
+  }
+
+  &__current-place {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #191919;
+
+    padding-left: 28px;
+
+    background-image: url(/assets/sprites/map-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+  }
+}
+.login-menu {
+  &__icon {
+  }
+
+  &__link {
+  }
+}
+.bottom-header {
+  &__wrapper {
+  }
+
+  &__link {
+  }
+}
+.logo-link {
+  &__logo {
+  }
+
+  &__company-name {
+  }
+}
+.cart-btn {
+  &__value {
+  }
+}
+.botton-header {
+  &__cart-btn {
+  }
+}
